@@ -1,75 +1,92 @@
-# 🖼️ BoyutLand.ır — Akıllı Görsel Boyutlandırıcı
+<div align="center">
 
-> Fotoğraflarınızı sosyal medya, baskı, e-ticaret ve daha fazlası için anında boyutlandırın. Tamamen tarayıcı tabanlı, sunucu gerektirmez.
+  <img src="logo.png" alt="BoyutLand Glitch Logo" width="380">
 
-[![Live Demo](https://img.shields.io/badge/🌐_Canlı_Demo-BoyutLand.ır-7c3aed?style=for-the-badge)](https://YOUR-USERNAME.github.io/BoyutLand)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+  # 🔮 BoyutLand
+  **Tek Görsel, Kusursuz Tüm Boyutlar. Sıfır Sunucu, %100 Gizlilik.**
 
----
+  [![Canlı Demo](https://img.shields.io/badge/Canl%C4%B1%20Site-BoyutLand-10B981?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hllbrayd.github.io/BoyutLand/)
+  [![GitHub Pages](https://img.shields.io/badge/Hosting-GitHub%20Pages-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://hllbrayd.github.io/BoyutLand/)
+  [![Lisans: MIT](https://img.shields.io/badge/Lisans-MIT-06B6D4?style=for-the-badge)](LICENSE)
+  [![Gizlilik](https://img.shields.io/badge/Gizlilik-%25100%20Client--Side-emerald?style=for-the-badge&logo=shield&logoColor=white)](https://hllbrayd.github.io/BoyutLand/)
 
-## ✨ Özellikler
+  <p align="center">
+    <i>Görsellerinizi harici hiçbir sunucuya göndermeden, tarayıcınızın kendi işlem gücüyle saniyeler içinde onlarca platform standardına uyarlayın ve toplu indirin.</i>
+  </p>
 
-- 🎨 **40+ Hazır Boyut** — Instagram, YouTube, TikTok, Vesikalık, Baskı ve daha fazlası
-- ✂️ **Manuel Kırpma** — Cropper.js ile hassas kırpma alanı ayarlama
-- 📦 **Toplu İndirme** — Seçilen tüm boyutları tek ZIP dosyasında indir
-- 🌍 **15 Dil Desteği** — Türkçe, İngilizce, Arapça, Almanca, Japonca ve daha fazlası
-- 🔒 **%100 Gizlilik** — Görseller cihazınızdan hiçbir zaman çıkmaz, sunucu yok
-- ⚡ **HD Kalite** — Anti-aliasing ve adım adım küçültme ile pikselleşmesiz çıktı
-- 📱 **Tam Responsive** — Mobil ve masaüstü uyumlu
-
-## 📁 Kategori & Boyutlar
-
-| Kategori | Açıklama |
-|---|---|
-| 📱 Sosyal Medya | Instagram, YouTube, TikTok, Facebook, LinkedIn, Pinterest |
-| 🖥️ Ekranlar & Duvar Kağıdı | Masaüstü, Mobil, Tablet, Akıllı Saat |
-| 🛒 E-Ticaret & Reklam | Amazon, Trendyol, Google Ads, Web Banner |
-| 🖨️ Baskı & Matbaa | Vesikalık, Kartvizit, Afiş, Poster (300 DPI) |
-
-## 🚀 Kullanım
-
-Bu proje tamamen statik HTML/CSS/JS dosyalarından oluşur. Çalıştırmak için:
-
-```bash
-# Doğrudan tarayıcıda açın
-open index.html
-
-# veya local sunucu başlatın
-npx serve .
-```
-
-## 🌐 GitHub Pages ile Yayınlama
-
-1. Bu repoyu **fork** edin veya kendi hesabınıza yükleyin
-2. Repo **Settings → Pages** bölümüne gidin
-3. **Source** olarak `main` branch ve `/ (root)` klasörünü seçin
-4. Birkaç dakika sonra siteniz `https://USERNAME.github.io/BoyutLand` adresinde yayında!
-
-## 🗂️ Dosya Yapısı
-
-```
-BoyutLand/
-├── index.html      # Ana HTML yapısı
-├── style.css       # Tüm stil tanımları (Tailwind CDN + özel CSS)
-├── script.js       # Tüm uygulama mantığı (i18n, canvas, cropper)
-├── logo.png        # BL logosu
-└── .gitignore
-```
-
-## 🛠️ Kullanılan Teknolojiler
-
-- **Vanilla JS** — Framework bağımlılığı yok
-- **Tailwind CSS** (CDN) — Utility-first CSS
-- **Cropper.js** — Görsel kırpma kütüphanesi
-- **JSZip** — ZIP paketleme
-- **HTML5 Canvas API** — Görsel işleme ve dışa aktarma
-
-## 📄 Lisans
-
-MIT License — Özgürce kullanabilir, değiştirebilir ve dağıtabilirsiniz.
+</div>
 
 ---
 
-<p align="center">Made with ❤️ for the Turkish web community</p>
+### ✦ Neden Farklı?
+
+BoyutLand; sıradan, yavaş ve fotoğraflarınızı uzak sunuculara yükleyen çevrim içi araçların aksine tamamen **istemci taraflı (client-side)** çalışır. 
+
+```
+[ Kullanıcı Fotoğrafı ] ──( Yerel Canvas Motoru )──> [ Kademeli Küçültme & Akıllı Kırpma ] ──> [ ZIP Çıktısı ]
+                               └─> Cihazınızdan dışarı 0 bayt veri çıkar.
+```
+
+---
+
+### ⚡ Öne Çıkan Yetenekler
+
+<table>
+  <tr>
+    <td width="50%">
+      <h4>🛡️ %100 Veri Güvenliği</h4>
+      Görselleriniz buluta veya üçüncü taraf sunuculara aktarılmaz; tüm render ve boyutlandırma işlemi tarayıcınızın belleğinde gerçekleşir.
+    </td>
+    <td width="50%">
+      <h4>💎 Kademeli Küçültme (Anti-Aliasing)</h4>
+      Favicon veya akıllı saat gibi mikro çözünürlüklerde piksellenmeyi önlemek için özel <i>Step-Down Scaling</i> algoritması devrededir.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h4>✂️ Sınır Korumalı Akıllı Kırpma</h4>
+      Görselin dışına taşmayan, oran kilitli ve hassas vizör ayarına sahip Cropper modülü ile her platform için doğru odak noktasını seçin.
+    </td>
+    <td width="50%">
+      <h4>⚠️ Akıllı Oran Uyarısı</h4>
+      Orijinal en-boy oranını zorlayan uçuk ölçüler seçildiğinde, buton üzerinde anlık beliren şık popover bildirimleriyle rehberlik eder.
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h4>📱 Kapsamlı Cihaz & Baskı Yelpazesi</h4>
+      iPhone 15 Pro Max'ten Galaxy S24 Ultra ve Honor 200'e; 300 DPI biyometrik baskılardan Google Ads formatlarına tam liste.
+    </td>
+    <td width="50%">
+      <h4>🌐 15 Dil Desteği & Dinamik Arayüz</h4>
+      Arapça (RTL) dahil 15 dilde anlık çevrilebilen yönergeler ve canlı mor-yeşil gradyan animasyonlarıyla zenginleştirilmiş akıcı deneyim.
+    </td>
+  </tr>
+</table>
+
+---
+
+### 🎯 3 Adımda Kullanım
+
+```markdown
+1. Görselinizi Sürükleyin       ──>  Masaüstünden veya galeriden fotoğrafı bırakın.
+2. Boyutları İşaretleyin        ──>  Sosyal medya, ekran veya baskı preset'lerinden istediklerinizi seçin.
+3. Toplu Paketi İndirin         ──>  Tek tıkla tüm boyutlar isimlendirilmiş olarak ZIP içinde elinizde.
+```
+
+> **İsimlendirme Standardı:** Çıktılar doğrudan `Platform_Format_GenislikxYukseklik.png` şablonuyla kaydedilir; dosya karmaşası yaşanmaz.
+
+---
+
+### 🛠️ Minimalist & Güçlü Mimari
+
+- **Çekirdek:** Vanilla JavaScript (ES6+), HTML5 Canvas API
+- **Stil & Efektler:** Tailwind CSS esintili modern UI, Mor & Yeşil Dinamik `@keyframes` Gradyanları
+- **Bileşenler:** `Cropper.js` (Hassas Kırpma), `JSZip` (Tarayıcı İçi Arşivleme)
+- **Dağıtım:** GitHub Pages (Sıfır Sunucu Maliyeti)
+
+---
+
+<div align="center">
+  <sub>Geliştirici: <b><a href="https://github.com/hllbrayd">hllbrayd</a></b> • Açık Kaynak <b>MIT Lisansı</b> ile korunmaktadır.</sub>
+</div>
