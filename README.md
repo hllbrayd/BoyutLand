@@ -1,3 +1,4 @@
+<img width="2752" height="1536" alt="Gemini_Generated_Image_32f6g032f6g032f6" src="https://github.com/user-attachments/assets/44ef6042-ffab-4a49-8f29-78aa8d57c57d" />
 <div align="center">
 
   <img src="logo.png" alt="BoyutLand Glitch Logo" width="380">
