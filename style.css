@@ -1,0 +1,397 @@
+/* ===== BoyutLand — style.css ====================================== */
+
+/* ── Base & Font ─────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --brand: #25a26b;
+  --brand-dark: #178356;
+  --bg: #030712;
+  --surface: #111827;
+  --border: #1f2937;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Noto Sans', 'Noto Sans Arabic', 'Noto Sans SC', 'Noto Sans JP',
+               'Noto Sans KR', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── RTL global ──────────────────────────────────────────────────── */
+[dir="rtl"] .end-6 { left: 1.5rem; right: auto; }
+[dir="rtl"] .end-0 { left: 0; right: auto; }
+
+/* ── BL Logo & Dynamic Animations ────────────────────────────────────── */
+
+/* Animated Gradient for BoyutLand.ır */
+.bl-dynamic-text {
+  background: linear-gradient(to right, #8b5cf6, #10b981, #0ea5e9, #8b5cf6); /* Elegant violet to emerald to sky blue */
+  background-size: 300% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: textShine 12s linear infinite; /* Yavaş ve şık geçiş */
+}
+@keyframes textShine {
+  to { background-position: 300% center; }
+}
+
+/* Resizing Square (Boyutlandırma Karesi) around the logo */
+.logo-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem;
+  border-radius: 16px;
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.logo-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  border: 2px dashed rgba(139, 92, 246, 0.7); /* Yumuşak mor ton */
+  opacity: 0;
+  transform: scale(0.85);
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  pointer-events: none;
+  z-index: -1;
+  background: rgba(139, 92, 246, 0.04);
+}
+
+.logo-wrapper:hover::before {
+  opacity: 1;
+  transform: scale(1);
+  animation: borderDance 15s linear infinite; /* Daha yavaş ve akıcı kare animasyonu */
+}
+
+@keyframes borderDance {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* ── Header blur ─────────────────────────────────────────────────── */
+#site-header {
+  background: rgba(3, 7, 18, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ── Checkerboard (transparency indicator) ───────────────────────── */
+.bg-checkerboard {
+  background-color: #111827;
+  background-image:
+    linear-gradient(45deg, #1c2535 25%, transparent 25%),
+    linear-gradient(-45deg, #1c2535 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #1c2535 75%),
+    linear-gradient(-45deg, transparent 75%, #1c2535 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+}
+
+/* ── Preview ratio badge ─────────────────────────────────────── */
+#preview-ratio-badge {
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  transform: translateY(4px);
+}
+#preview-ratio-badge:not(:empty) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Drop zone ───────────────────────────────────────────────────── */
+#drop-zone.drag-over {
+  border-color: var(--brand);
+  background-color: rgba(37,162,107,0.07);
+  transform: scale(1.01);
+}
+
+/* ── Language dropdown ───────────────────────────────────────────── */
+#lang-menu::-webkit-scrollbar { width: 4px; }
+#lang-menu::-webkit-scrollbar-track { background: transparent; }
+#lang-menu::-webkit-scrollbar-thumb { background: #374151; border-radius: 9999px; }
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 0.8125rem;
+  color: #9ca3af;
+  transition: background 0.12s, color 0.12s;
+  white-space: nowrap;
+}
+.lang-option:hover { background: #1f2937; color: #f3f4f6; }
+.lang-option.active { background: rgba(37,162,107,0.12); color: #34d399; }
+.lang-option .lang-flag { font-size: 1.1em; }
+.lang-option .lang-label { flex: 1; }
+.lang-option .lang-native { font-size: 0.7rem; color: #6b7280; }
+.lang-option .check-icon { width: 14px; height: 14px; color: var(--brand); opacity: 0; flex-shrink: 0; }
+.lang-option.active .check-icon { opacity: 1; }
+
+/* ── Category tabs ───────────────────────────────────────────────── */
+.cat-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 13px;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1.5px solid #374151;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  background: #1f2937;
+  color: #9ca3af;
+  user-select: none;
+}
+.cat-tab:hover { background: #2d3748; color: #d1d5db; border-color: #4b5563; }
+.cat-tab.active {
+  background: rgba(37,162,107,0.14);
+  color: #34d399;
+  border-color: rgba(37,162,107,0.4);
+}
+
+/* ── Size item ───────────────────────────────────────────────────── */
+.size-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1.5px solid #1f2937;
+  background: #111827;
+  cursor: pointer;
+  transition: all 0.14s ease;
+  user-select: none;
+}
+.size-item:hover { border-color: #374151; background: #18212f; }
+.size-item.checked {
+  border-color: rgba(37,162,107,0.45);
+  background: rgba(37,162,107,0.06);
+}
+
+.size-item input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--brand);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.size-item .size-name {
+  flex: 1;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #d1d5db;
+  line-height: 1.3;
+}
+
+.size-item .size-dims {
+  font-size: 0.675rem;
+  font-weight: 600;
+  color: #4b5563;
+  font-variant-numeric: tabular-nums;
+  background: #1f2937;
+  padding: 2px 7px;
+  border-radius: 5px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.size-item.checked .size-dims { color: #34d399; background: rgba(37,162,107,0.1); }
+
+/* Crop button inside size item */
+.crop-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: transparent;
+  border: 1.5px solid #374151;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.14s ease;
+  flex-shrink: 0;
+  position: relative;
+}
+.crop-btn:hover {
+  background: rgba(139,92,246,0.1);
+  border-color: #8b5cf6;
+  color: #a78bfa;
+  transform: scale(1.05);
+}
+.crop-btn.has-crop {
+  background: rgba(139,92,246,0.15);
+  border-color: #7c3aed;
+  color: #c4b5fd;
+}
+.crop-btn .crop-dot {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 8px;
+  height: 8px;
+  background: #8b5cf6;
+  border-radius: 50%;
+  border: 1.5px solid #111827;
+  display: none;
+}
+.crop-btn.has-crop .crop-dot { display: block; }
+
+/* ── Individual Download Button ─────────────────────────────── */
+.dl-single-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: transparent;
+  border: 1.5px solid #374151;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.14s ease;
+  flex-shrink: 0;
+}
+.dl-single-btn:hover {
+  background: rgba(59,130,246,0.10);
+  border-color: #3b82f6;
+  color: #60a5fa;
+  transform: scale(1.05);
+}
+.dl-single-btn:disabled,
+.dl-single-btn.loading {
+  opacity: 0.45;
+  cursor: not-allowed;
+  animation: spin 0.8s linear infinite;
+}
+
+/* ── Panels ──────────────────────────────────────────────────────── */
+.size-panel { display: none; }
+.size-panel.active { display: block; }
+
+/* ── Custom entries ──────────────────────────────────────────────── */
+.custom-entry {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(139,92,246,0.06);
+  border: 1px solid rgba(139,92,246,0.18);
+  transition: all 0.14s;
+}
+.custom-entry.checked {
+  border-color: rgba(139,92,246,0.45);
+  background: rgba(139,92,246,0.1);
+}
+.custom-entry input[type="checkbox"] { accent-color: #8b5cf6; cursor: pointer; }
+.custom-entry .entry-label { flex: 1; font-size: 0.8rem; color: #c4b5fd; font-weight: 500; }
+.custom-entry .entry-dims {
+  font-size: 0.675rem; color: #7c3aed;
+  background: rgba(139,92,246,0.1);
+  padding: 2px 8px; border-radius: 5px;
+}
+.custom-entry .remove-btn {
+  width: 20px; height: 20px; border-radius: 50%;
+  background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);
+  color: #f87171; display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all 0.14s; flex-shrink: 0;
+  font-size: 13px; line-height: 1; font-weight: 600;
+}
+.custom-entry .remove-btn:hover {
+  background: rgba(239,68,68,0.2); border-color: rgba(239,68,68,0.4);
+}
+
+/* ── Crop Modal ──────────────────────────────────────────────────── */
+#crop-modal {
+  transition: opacity 0.2s ease;
+}
+/* Cropper.js overrides for dark mode */
+.cropper-view-box,
+.cropper-face {
+  border-radius: 2px;
+}
+.cropper-line { background-color: rgba(37,162,107,0.7); }
+.cropper-point { background-color: #25a26b; width: 8px; height: 8px; }
+.cropper-dashed { border-color: rgba(37,162,107,0.3); }
+
+/* ── Toast animation ─────────────────────────────────────────────── */
+@keyframes toastIn {
+  from { transform: translateY(12px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.toast-anim { animation: toastIn 0.22s ease-out; }
+
+/* ── Scrollbar ───────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #111827; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 9999px; }
+::-webkit-scrollbar-thumb:hover { background: #4b5563; }
+
+/* ── Number inputs: hide arrows ──────────────────────────────────── */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type="number"] { -moz-appearance: textfield; }
+
+/* ── Mobile: unstick preview ─────────────────────────────────────── */
+@media (max-width: 1023px) {
+  #main-panel .sticky { position: static; }
+}
+
+/* ── RTL: lang dropdown opens to left ────────────────────────────── */
+[dir="rtl"] #lang-menu { left: 0; right: auto; }
+
+
+/* ── UI Clickability Fixes ───────────────────────────────────────── */
+/* Kapsayıcı div, arka plan ve overlay'lerde tıklamaları devre dışı bırak */
+body::before,
+body::after,
+#site-header::before,
+.logo-wrapper::before,
+.bg-checkerboard {
+  pointer-events: none !important;
+}
+
+/* Tüm butonların, logoların ve inputların tıklanabilir olmasını garanti altına al */
+button,
+a,
+input,
+.logo-wrapper,
+.cat-tab,
+.size-item,
+.crop-btn,
+.dl-single-btn,
+#file-input,
+#drop-zone {
+  position: relative;
+  z-index: 30;
+  pointer-events: auto !important;
+}
+
+
+/* ── UI Z-Index Fixes ───────────────────────────────────────── */
+/* Dil seçme menüsünü ve açılır kutusunu diğer tüm alanların üstüne çıkar */
+.relative.z-50 {
+  z-index: 999 !important; /* The wrapper div for the language menu */
+}
+
+#lang-menu {
+  z-index: 1000 !important;
+  pointer-events: auto !important;
+}
+
+#drop-zone {
+  z-index: 10 !important;
+}
