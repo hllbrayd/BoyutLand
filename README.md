@@ -1,93 +1,159 @@
-<img width="2752" height="1536" alt="Gemini_Generated_Image_32f6g032f6g032f6" src="https://github.com/user-attachments/assets/44ef6042-ffab-4a49-8f29-78aa8d57c57d" />
+<img width="2752" height="1536" alt="Gemini_Generated_Image_32f6g032f6g032f6" src="https://github.com/user-attachments/assets/74212ae6-f7b4-4f8b-bcad-f179c6872eb0" />
+
 <div align="center">
+  <img src="logo.png" alt="BoyutLand Logo" width="320">
+
+  # ⚡ BoyutLand 🔮
+  **1 Image In. Every Dimension Out. 0% Server Leaks 🛡️**
+
+  <p align="center">
+    <a href="https://hllbrayd.github.io/BoyutLand/"><img src="https://img.shields.io/badge/🚀_LAUNCH-BoyutLand-10B981?style=for-the-badge" alt="Demo"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/LICENSE-MIT-06B6D4?style=for-the-badge" alt="MIT"></a>
+    <img src="https://img.shields.io/badge/PRIVACY-100%25_Local-8B5CF6?style=for-the-badge" alt="Privacy">
+  </p>
+</div>
+
+---
+
+### ⚔️ Why It Wins
+
+| 🛑 Typical Resizers | ⚡ BoyutLand Engine |
+| :--- | :--- |
+| ☁️ Uploads data to cloud servers | 🛡️ **100% in-browser RAM** (Zero server interaction) |
+| 🪓 Downscales into blurry pixels | 💎 **Step-Down Scaling** for crisp icons & favicons |
+| 🐌 Sluggish queues & paywalls | ⚡ **Instant HTML5 Canvas** + completely free |
+| 📂 Random output filenames | 🏷️ Auto-named `.zip` (`Platform_Format_WxH.png`) |
+
+---
+
+### 🗂️ Presets
+
+| Category | Formats Included |
+| :--- | :--- |
+| 📱 **Social Media** | Instagram, X, YouTube, TikTok, LinkedIn |
+| 📲 **Flagships** | iPhone 15 Pro Max, Galaxy S24 Ultra, Galaxy A35/A25, Honor 200 |
+| 💻 **Web & Ads** | Favicon (16x16/32x32), Google Ads (Leaderboard, Half Page, Square) |
+| 🖨️ **Print (300 DPI)** | Biometric ID, Passport Photos, A3, A4, A5, Poster Formats |
+| 🛠️ **Custom** | Manual width & height input on the fly |
+
+---
+
+### 🌟 Key Highlights
+
+* 🛡️ **Local & Air-Gapped:** Photos never leave your device.
+* 💎 **Step-Down Scaler:** Progressive downsampling prevents pixelation on tiny canvases.
+* ✂️ **Boundary-Locked Crop:** Viewfinder stays strictly constrained inside the image frame.
+* ⚠️ **Smart Warnings:** Dynamic tooltips pop up over high-distortion aspect ratios.
+* 🌍 **15 Languages:** Dynamic UI switching with full Arabic RTL support.
+
+---
+
+### 🎮 How to Use
+
+1. **Drop:** Drag your image into the dropzone.
+2. **Select:** Pick platforms, devices, or print sizes.
+3. **Download:** Grab your sorted, pre-named ZIP bundle instantly.
+
+---
+
+### 🧰 Tech Stack
+
+* **Core:** Vanilla JS (ES6+), HTML5 Canvas API
+* **Libraries:** `Cropper.js`, `JSZip`
+* **UI:** Responsive CSS with animated purple-green gradients
+* **Hosting:** GitHub Pages
+
+---
+
+<div align="center">
+  <sub>Built by <b><a href="https://github.com/hllbrayd">hllbrayd</a></b> • Distributed under the <b>MIT License</b>.</sub>
+</div><img width="2752" height="1536" alt="Gemini_Generated_Image_32f6g032f6g032f6" src="https://github.com/user-attachments/assets/32c24503-bdcf-4a16-b9ba-e7bfb97e788c" />
+<img width="2752" height="1536" alt="Gemini_Generated_Image_32f6g032f6g032f6" src="https://github.com/user-attachments/assets/8137c43e-1b0f-40a3-9f6f-2e25ff4210fc" />
+<img width="2752" height="1536" alt="Gemini_Generated_Image_32f6g032f6g032f6" src="https://github.com/user-attachments/assets/896ca004-be20-4ab4-8e3d-485a3f2e7ba2" />
+
+1. **Drop:** Drag your photo directly onto the interface.
+2. **Select:** Pick presets across social channels, screen resolutions, and print templates.
+3. **Download:** Grab a clean, pre-bundled ZIP containing every size sorted and named.
+
+> **Clean Filename Scheme:**  
+> Files follow a consistent naming convention: `Platform_Format_WidthxHeight.png` (e.g., `Instagram_Story_1080x1920.png`).
+
+---
+
+### Tech Stack
+
+* **Language:** Vanilla JavaScript (ES6+), HTML5 Canvas API
+* **Styling:** Modern CSS with fluid purple-green `@keyframes` accent gradients
+* **Libraries:** `Cropper.js` (constrained viewfinder) & `JSZip` (local zip packaging)
+* **Hosting:** GitHub Pages
+
+---
+
+<div align="center">
+  <sub>Authored by <b><a href="https://github.com/hllbrayd">hllbrayd</a></b> • Released under the permissive <b>MIT License</b>.</sub>
+</div>
+
 
   <img src="logo.png" alt="BoyutLand Glitch Logo" width="380">
 
-  # 🔮 BoyutLand
-  **Tek Görsel, Kusursuz Tüm Boyutlar. Sıfır Sunucu, %100 Gizlilik.**
+  # BoyutLand
+  **Batch image resizing right inside your browser. No servers, zero data leaks.**
 
-  [![Canlı Demo](https://img.shields.io/badge/Canl%C4%B1%20Site-BoyutLand-10B981?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hllbrayd.github.io/BoyutLand/)
-  [![GitHub Pages](https://img.shields.io/badge/Hosting-GitHub%20Pages-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://hllbrayd.github.io/BoyutLand/)
-  [![Lisans: MIT](https://img.shields.io/badge/Lisans-MIT-06B6D4?style=for-the-badge)](LICENSE)
-  [![Gizlilik](https://img.shields.io/badge/Gizlilik-%25100%20Client--Side-emerald?style=for-the-badge&logo=shield&logoColor=white)](https://hllbrayd.github.io/BoyutLand/)
-
-  <p align="center">
-    <i>Görsellerinizi harici hiçbir sunucuya göndermeden, tarayıcınızın kendi işlem gücüyle saniyeler içinde onlarca platform standardına uyarlayın ve toplu indirin.</i>
-  </p>
+  [![Live App](https://img.shields.io/badge/Live%20Demo-BoyutLand-10B981?style=for-the-badge&logo=googlechrome&logoColor=white)](https://hllbrayd.github.io/BoyutLand/)
+  [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-8B5CF6?style=for-the-badge&logo=github&logoColor=white)](https://hllbrayd.github.io/BoyutLand/)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-06B6D4?style=for-the-badge)](LICENSE)
+  [![Privacy](https://img.shields.io/badge/Data%20Privacy-100%25%20Client--Side-emerald?style=for-the-badge&logo=shield&logoColor=white)](https://hllbrayd.github.io/BoyutLand/)
 
 </div>
 
 ---
 
-### ✦ Neden Farklı?
+### Why It Exists
 
-BoyutLand; sıradan, yavaş ve fotoğraflarınızı uzak sunuculara yükleyen çevrim içi araçların aksine tamamen **istemci taraflı (client-side)** çalışır. 
+Most online photo resizers quietly upload your personal pictures to remote cloud storage before handing them back. 
 
-```
-[ Kullanıcı Fotoğrafı ] ──( Yerel Canvas Motoru )──> [ Kademeli Küçültme & Akıllı Kırpma ] ──> [ ZIP Çıktısı ]
-                               └─> Cihazınızdan dışarı 0 bayt veri çıkar.
+**BoyutLand takes a different route:** your device does every ounce of the heavy lifting.
+
+```text
+[ Your Image ] ──> ( HTML5 Canvas Engine ) ──> [ Step-Down Scaler ] ──> [ Formatted .ZIP ]
+                          │
+                          └──> 0 bytes ever transmitted over the network.
 ```
 
 ---
 
-### ⚡ Öne Çıkan Yetenekler
+### Core Highlights
 
-<table>
-  <tr>
-    <td width="50%">
-      <h4>🛡️ %100 Veri Güvenliği</h4>
-      Görselleriniz buluta veya üçüncü taraf sunuculara aktarılmaz; tüm render ve boyutlandırma işlemi tarayıcınızın belleğinde gerçekleşir.
-    </td>
-    <td width="50%">
-      <h4>💎 Kademeli Küçültme (Anti-Aliasing)</h4>
-      Favicon veya akıllı saat gibi mikro çözünürlüklerde piksellenmeyi önlemek için özel <i>Step-Down Scaling</i> algoritması devrededir.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h4>✂️ Sınır Korumalı Akıllı Kırpma</h4>
-      Görselin dışına taşmayan, oran kilitli ve hassas vizör ayarına sahip Cropper modülü ile her platform için doğru odak noktasını seçin.
-    </td>
-    <td width="50%">
-      <h4>⚠️ Akıllı Oran Uyarısı</h4>
-      Orijinal en-boy oranını zorlayan uçuk ölçüler seçildiğinde, buton üzerinde anlık beliren şık popover bildirimleriyle rehberlik eder.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h4>📱 Kapsamlı Cihaz & Baskı Yelpazesi</h4>
-      iPhone 15 Pro Max'ten Galaxy S24 Ultra ve Honor 200'e; 300 DPI biyometrik baskılardan Google Ads formatlarına tam liste.
-    </td>
-    <td width="50%">
-      <h4>🌐 15 Dil Desteği & Dinamik Arayüz</h4>
-      Arapça (RTL) dahil 15 dilde anlık çevrilebilen yönergeler ve canlı mor-yeşil gradyan animasyonlarıyla zenginleştirilmiş akıcı deneyim.
-    </td>
-  </tr>
-</table>
+* **100% Client-Side Engine:** Everything runs through local memory and native browser canvas. Zero uploads, zero backends, absolute privacy.
+* **Step-Down Scaling (Anti-Aliasing):** Downsizing a 4K image down to a 16x16 Favicon or an Apple Watch frame usually degrades into a pixelated mess. Our progressive scaling algorithm steps the resolution down incrementally to keep edges sharp.
+* **Strict Boundary Cropping:** Visual crop overlays stay locked inside the photo frame. No jumping off-screen or vanishing during quick swipes.
+* **Proactive Aspect Warnings:** Trying to force a wide landscape picture into a narrow Google Leaderboard banner? An unobtrusive tooltip alerts you immediately above that exact preset so you can adjust crop boundaries manually.
+* **Comprehensive Presets:** Social media assets, 300 DPI print ratios, and exact device viewports (from iPhone 15 Pro Max to Galaxy S24 Ultra and Honor 200).
+* **Multi-Language Architecture:** 15 supported languages—complete with RTL layouts for Arabic—switch instantly without page reloads.
 
 ---
 
-### 🎯 3 Adımda Kullanım
+### The 3-Step Flow
 
-```markdown
-1. Görselinizi Sürükleyin       ──>  Masaüstünden veya galeriden fotoğrafı bırakın.
-2. Boyutları İşaretleyin        ──>  Sosyal medya, ekran veya baskı preset'lerinden istediklerinizi seçin.
-3. Toplu Paketi İndirin         ──>  Tek tıkla tüm boyutlar isimlendirilmiş olarak ZIP içinde elinizde.
-```
+1. **Drop:** Drag your photo directly onto the interface.
+2. **Select:** Pick presets across social channels, screen resolutions, and print templates.
+3. **Download:** Grab a clean, pre-bundled ZIP containing every size sorted and named.
 
-> **İsimlendirme Standardı:** Çıktılar doğrudan `Platform_Format_GenislikxYukseklik.png` şablonuyla kaydedilir; dosya karmaşası yaşanmaz.
+> **Clean Filename Scheme:**  
+> Files follow a consistent naming convention: `Platform_Format_WidthxHeight.png` (e.g., `Instagram_Story_1080x1920.png`).
 
 ---
 
-### 🛠️ Minimalist & Güçlü Mimari
+### Tech Stack
 
-- **Çekirdek:** Vanilla JavaScript (ES6+), HTML5 Canvas API
-- **Stil & Efektler:** Tailwind CSS esintili modern UI, Mor & Yeşil Dinamik `@keyframes` Gradyanları
-- **Bileşenler:** `Cropper.js` (Hassas Kırpma), `JSZip` (Tarayıcı İçi Arşivleme)
-- **Dağıtım:** GitHub Pages (Sıfır Sunucu Maliyeti)
+* **Language:** Vanilla JavaScript (ES6+), HTML5 Canvas API
+* **Styling:** Modern CSS with fluid purple-green `@keyframes` accent gradients
+* **Libraries:** `Cropper.js` (constrained viewfinder) & `JSZip` (local zip packaging)
+* **Hosting:** GitHub Pages
 
 ---
 
 <div align="center">
-  <sub>Geliştirici: <b><a href="https://github.com/hllbrayd">hllbrayd</a></b> • Açık Kaynak <b>MIT Lisansı</b> ile korunmaktadır.</sub>
+  <sub>Authored by <b><a href="https://github.com/hllbrayd">hllbrayd</a></b> • Released under the permissive <b>MIT License</b>.</sub>
 </div>
+![Uploading Gemini_Generated_Image_32f6g032f6g032f6.jpg…]()
